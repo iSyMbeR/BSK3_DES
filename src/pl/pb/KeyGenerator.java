@@ -24,9 +24,9 @@ public class KeyGenerator {
 
     private static final int[] shifts = {1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1};
 
-    public static String[] generator() {
+    public static String[] generator(String key) {
         String[] subKeys = new String[16];
-        String key = "IEOFIT#1";
+
         StringBuilder leftSide = new StringBuilder();
         StringBuilder rightSide = new StringBuilder();
         StringBuilder binaryKey = new StringBuilder(BinaryConverter.convertStringToBinary8Bits(key));
